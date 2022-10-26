@@ -3,16 +3,22 @@ header {
     padding: 20px 0;
 }
 
+h1 {
+    margin: 0 0 0 80px;
+}
+
+/*
 .caixa {
     position: relative;
     width: 900px;
     margin: 0 auto;
-}
+}*/
 
 nav {
-    position: absolute;
+	position: absolute;
     top: 110px;
-    right: 0;
+    right: 100px;
+    font-weight: bold;
 }
 
 nav li {
