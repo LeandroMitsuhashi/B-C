@@ -1,55 +1,52 @@
+body {
+	background-color: #d5c1ae;
+}
+
 header {
-    background: #BBBBBB;
-    padding: 20px 0;
+    background: #000000;
+    padding: 60px 0;
 }
 
-h1 {
-    margin: 0 0 0 80px;
-}
-
-/*
 .caixa {
-    position: relative;
-    width: 900px;
-    margin: 0 auto;
-}*/
-
+	position: relative;
+	width: 900px;
+	margin: 0 auto;
+}
 nav {
 	position: absolute;
-    top: 110px;
-    right: 100px;
-    font-weight: bold;
+    top: 40px;
+    right: 0;
 }
 
 nav li {
     display: inline;
     margin: 0 0 0 15px;
-}
+} 
 
 nav a {
     text-transform: uppercase;
-    color: #000000;
-    font-weight: bold;
-    font-size: 22px;
+    color: white;
+    font-size: 18px;
     text-decoration: none;
 }
 
 nav a:hover {
-    color: #c78c19;
+    color: #d5c1ae;
     text-decoration: underline;
 }
+
+/* cabeçalho até aqui */
+
 
 .titulo-principal {
 	text-align: center;
 	font-size: 2em;
-	font-weight: bold;
-	margin: 0 0 1em;
-	padding: 1em;
+	margin: 1em 0 1em;
 }
 
-.principal {
+.principal p {
 	margin: 0 0 1em;
-	padding: 0 30px 40px 30px;
+	text-align: center;
 }
 
 .principal strong {
@@ -64,53 +61,37 @@ nav a:hover {
 em strong {
 	color: #FF0000;
 }
-
-p { 
+.principal strong {
+	font-weight: bold;
 	text-align: center;
-	padding: 0 10px 30px 10px;
-	font-size: 20px;	
+}
+
+.principal em {
+	font-style: italic;
+	text-align: center;
+}
+
+.itens {
+	text-align: center;
+	font-style: italic;
+	font-size: 18px;
+	padding: 4px;
+	margin: auto;
 }
 
 #missao {
 	font-size: 25px
 }
 
-.titulo-temos {
-	text-align: left;
-	font-size: 25px;
-	font-weight: bold;
-	margin: 0 20px 10px;
-	padding: 20px 0;
+aside p {
+	margin: 0 0 1em;
+	text-align: center;
 }
 
-.itens {
-	font-style: italic;
-	font-size: 18px;
-	padding: 4px;
-}
-
-.beneficios {
-	
-	padding: 20px;
-}
-
-.localizacao {
-	text-align: left;
-	font-size: 25px;
-	font-weight: bold;
-	margin: 0 20px 10px;
-	padding: 20px 0;
-}
-
-.it {
+.endereco {
+	width: 40%;
 	display: inline-block;
-	vertical-align: top;
-	width: 20%;
-	margin-right: 15%;
-}
-
-.imagem-endereco {
-	width: 30%;
+	position: relative;
 }
 
 footer {
@@ -124,3 +105,60 @@ footer {
     margin: 20px 0 0;
 	font-style: italic;
 }
+/*body {
+	margin: o 15px 0 15px;
+}
+
+header {
+    background: #BBBBBB;
+    padding: 20px 0;
+}
+
+h1 {
+    margin: 0 0 0 80px;
+}
+
+nav a:hover {
+    color: #c78c19;
+    text-decoration: underline;
+}
+
+.titulo-principal {
+	text-align: center;
+	font-size: 2em;
+	margin: 0 0 1em;
+	font-weight: bold;
+	padding: 1em;
+}
+
+.principal p {
+	margin: 0 0 1em;
+	padding: 0 30px 40px 30px;
+}
+
+
+
+p { 
+	text-align: center;
+	padding: 0 10px 30px 10px;
+	font-size: 20px;	
+}
+
+.itens {
+	font-style: italic;
+	font-size: 18px;
+	padding: 4px;
+}
+
+.beneficios {
+	
+	padding: 20px;
+}
+
+.it {
+	display: inline-block;
+	vertical-align: top;
+	width: 20%;
+	margin-right: 15%;
+}
+
