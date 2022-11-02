@@ -1,29 +1,51 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2? family= Open+Sans:wght@700 & display=swap');
+
+@import url('https://fonts.googleapis.com/css2? família= Pobre+História & display=swap');
+
+:root {
+    --cor0: #dda673cd;
+    --cor1: #D5C1AE;
+    --cor2: #A39486;
+    --cor3: #57412D;
+    --cor4: #574F47;
+    --cor5: #070707;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'Pobre história', cursiva;
+	--fonte-geral: 'Times New Roman', Times, serif;
+    
+}
+
+* {
+	margin: 0px;
+    padding: 0px;
+}
+
 body {
-	background-color: #d5c1ae;
+	background-color: var(--cor1);
 }
 
 header {
-    background: #000000;
-    padding: 60px 0;
+	background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
+    min-width: 150px;
+    padding: 40px;
+	box-shadow:-2px 5px 15px 3px rgb(0 0 0 / 24%);
+	border-bottom: 3px solid var(--cor1)
+	
 }
 
-.caixa {
-	position: relative;
-	width: 900px;
-	margin: 0 auto;
-}
 nav {
 	position: absolute;
-    top: 40px;
-    right: 0;
+    top: 110px;
+    right: 40px;
+	
 }
 
-nav li {
-    display: inline;
-    margin: 0 0 0 15px;
-} 
-
 nav a {
+	display: inline;
+    margin: 0 0 0 15px;
     text-transform: uppercase;
     color: white;
     font-size: 18px;
@@ -37,7 +59,66 @@ nav a:hover {
 
 /* cabeçalho até aqui */
 
+main {
+	font-family: var(--fonte-padrao);
+    padding: 20px;
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 30px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.406);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+	
 
+}
+
+main h1 {
+    color: var(--cor5);
+	font-family: var(--fonte-destaque);
+    text-align: center;
+}
+
+main h2 {
+    color: var(--cor5);
+	font-family: var(--fonte-destaque);
+    text-align: center;
+}
+
+main h3 {
+	color: var(--cor5);
+	font-family: var(--fonte-destaque);
+	text-align: center;
+}
+
+p {
+	margin: 15px 0px;
+	text-align: justify;
+	text-indent: 30px;
+	text-indent: 30px;
+    font-size: 1em;
+;
+    line-height: 2em;
+
+}
+
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: url(bg.jpg);
+}
+.copyright {
+    color: #ffffff;
+	text-align: center;
+    font-size: 13px;
+    margin: 0 0 0;
+	font-style: italic;
+}
+
+
+/*
 .titulo-principal {
 	text-align: center;
 	font-size: 2em;
@@ -61,6 +142,7 @@ nav a:hover {
 em strong {
 	color: #FF0000;
 }
+
 .principal strong {
 	font-weight: bold;
 	text-align: center;
@@ -75,23 +157,20 @@ em strong {
 	text-align: center;
 	font-style: italic;
 	font-size: 18px;
-	padding: 4px;
+	padding: 1px;
 	margin: auto;
 }
 
 #missao {
-	font-size: 25px
+	font-size: 25px;
+	text-align: center;
+	padding: 10px 10px;
+
 }
 
 aside p {
 	margin: 0 0 1em;
 	text-align: center;
-}
-
-.endereco {
-	width: 40%;
-	display: inline-block;
-	position: relative;
 }
 
 footer {
