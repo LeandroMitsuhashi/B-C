@@ -1,29 +1,51 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2? family= Open+Sans:wght@700 & display=swap');
+
+@import url('https://fonts.googleapis.com/css2? família= Pobre+História & display=swap');
+
+:root {
+    --cor0: #dda673cd;
+    --cor1: #D5C1AE;
+    --cor2: #A39486;
+    --cor3: #57412D;
+    --cor4: #574F47;
+    --cor5: #070707;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'Pobre história', cursiva;
+	--fonte-geral: 'Times New Roman', Times, serif;
+    
+}
+
+* {
+	margin: 0px;
+    padding: 0px;
+}
+
 body {
-	background-color: #d5c1ae;
+	background-color: var(--cor1);
 }
 
 header {
-    background: #000000;
-    padding: 60px 0;
+	background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
+    min-width: 150px;
+    padding: 40px;
+	box-shadow:-2px 2px 15px 3px rgb(0 0 0 / 24%);
+	border-bottom: 3px solid var(--cor0)
+	
 }
 
-.caixa {
-	position: relative;
-	width: 900px;
-	margin: 0 auto;
-}
 nav {
 	position: absolute;
-    top: 40px;
-    right: 0;
+    top: 110px;
+    right: 40px;
+	
 }
 
-nav li {
-    display: inline;
-    margin: 0 0 0 15px;
-} 
-
 nav a {
+	display: inline;
+    margin: 0 0 0 15px;
     text-transform: uppercase;
     color: white;
     font-size: 18px;
@@ -34,9 +56,13 @@ nav a:hover {
     color: #d5c1ae;
     text-decoration: underline;
 }
+/* cabeçalho até aqui */
+
 
 .area {
+    font-family: var(--fonte-destaque);
     text-align: center;
+    font-weight: bolder;
     font-size: 30px;
     padding: 30px 0;
 }
@@ -49,6 +75,7 @@ nav a:hover {
 
 .servicos li {
     display: inline-block;
+    background-color: rgba(226, 218, 218, 0.537);
     text-align: center;
     width: 30%;
     vertical-align: top;
@@ -93,16 +120,19 @@ nav a:hover {
     text-decoration: none;
 }
 
+/* footer a partir daqio */
+
 footer {
-    text-align: center;
-    padding: 50px;
     background: url(bg.jpg);
+    padding: 3px;
 }
 
 .copyright {
     color: #ffffff;
+	text-align: center;
     font-size: 13px;
-    margin: 20px 0 0;
+    margin: 0 0 0;
 	font-style: italic;
 }
+
 

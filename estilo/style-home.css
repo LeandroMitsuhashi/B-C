@@ -32,7 +32,7 @@ header {
     min-width: 150px;
     padding: 40px;
 	box-shadow:-2px 5px 15px 3px rgb(0 0 0 / 24%);
-	border-bottom: 3px solid var(--cor1)
+	border-bottom: 3px solid var(--cor0)
 	
 }
 
@@ -55,6 +55,7 @@ nav a {
 nav a:hover {
     color: #d5c1ae;
     text-decoration: underline;
+    font-size: 19px;
 }
 
 /* cabeçalho até aqui */
@@ -98,15 +99,62 @@ p {
 	text-indent: 30px;
 	text-indent: 30px;
     font-size: 1em;
-;
     line-height: 2em;
 
 }
 
+ul {
+    padding: 20px;
+}
+
+.container {
+    width: 1000px;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    align-content: center;
+    row-gap: 10px;
+    column-gap: 30px;
+    background-color: #dbdbdb2b;
+    transition: 3s;
+    border-radius: 20px;
+    box-shadow:  0px 7px 7px rgba(0, 0, 0, 0.32);
+}
+/*.container {
+  
+    width: 1000px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    align-content: space-around;
+    gap: 40px;
+    background-color: #dbdbdb2b;
+    transition: 3s;
+    border-radius: 20px;
+    box-shadow:  0px 7px 7px rgba(0, 0, 0, 0.32);
+}*/
+
+.bloco >a:hover { 
+    transition: all ;
+    cursor: pointer;
+    -webkit-animation: alternate;
+    transform: scale(1.5);
+    filter: drop-shadow(5px 5px 3px rgba(49, 49, 49, 0.464));    
+}
+
+   
+
+
+.localizacao {
+    padding: 50px 0 0 0  ;
+}
 
 footer {
-    text-align: center;
-    padding: 10px;
     background: url(bg.jpg);
 }
 .copyright {
@@ -116,128 +164,3 @@ footer {
     margin: 0 0 0;
 	font-style: italic;
 }
-
-
-/*
-.titulo-principal {
-	text-align: center;
-	font-size: 2em;
-	margin: 1em 0 1em;
-}
-
-.principal p {
-	margin: 0 0 1em;
-	text-align: center;
-}
-
-.principal strong {
-	font-weight: bold;
-}
-
-.principal em {
-	font-style: italic;
-	
-}
-
-em strong {
-	color: #FF0000;
-}
-
-.principal strong {
-	font-weight: bold;
-	text-align: center;
-}
-
-.principal em {
-	font-style: italic;
-	text-align: center;
-}
-
-.itens {
-	text-align: center;
-	font-style: italic;
-	font-size: 18px;
-	padding: 1px;
-	margin: auto;
-}
-
-#missao {
-	font-size: 25px;
-	text-align: center;
-	padding: 10px 10px;
-
-}
-
-aside p {
-	margin: 0 0 1em;
-	text-align: center;
-}
-
-footer {
-    text-align: center;
-    padding: 50px;
-    background: url(bg.jpg);
-}
-.copyright {
-    color: #ffffff;
-    font-size: 13px;
-    margin: 20px 0 0;
-	font-style: italic;
-}
-/*body {
-	margin: o 15px 0 15px;
-}
-
-header {
-    background: #BBBBBB;
-    padding: 20px 0;
-}
-
-h1 {
-    margin: 0 0 0 80px;
-}
-
-nav a:hover {
-    color: #c78c19;
-    text-decoration: underline;
-}
-
-.titulo-principal {
-	text-align: center;
-	font-size: 2em;
-	margin: 0 0 1em;
-	font-weight: bold;
-	padding: 1em;
-}
-
-.principal p {
-	margin: 0 0 1em;
-	padding: 0 30px 40px 30px;
-}
-
-
-
-p { 
-	text-align: center;
-	padding: 0 10px 30px 10px;
-	font-size: 20px;	
-}
-
-.itens {
-	font-style: italic;
-	font-size: 18px;
-	padding: 4px;
-}
-
-.beneficios {
-	
-	padding: 20px;
-}
-
-.it {
-	display: inline-block;
-	vertical-align: top;
-	width: 20%;
-	margin-right: 15%;
-}
-
