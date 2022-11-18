@@ -21,7 +21,7 @@
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
-    outline: 0;
+    outline: 0px;
 }
 
 body {
@@ -70,104 +70,17 @@ header {
 
 /* cabeçalho até aqui */
 
-
-
-/*header{
-    background: #BBBBBB;
-    padding: 20px 0;
-}
-
-.caixa {
-    position: relative;
-    width: 900px;
-    margin: 0 auto;
-}
-
-nav {
-    position: absolute;
-    top: 110px;
-    right: 0;
-}
-
-nav li {
-    display: inline;
-    margin: 0 0 0 15px;
-}
-
-nav a {
-    text-transform: uppercase;
-    color: #000000;
-    font-weight: bold;
-    font-size: 22px;
-    text-decoration: none;
-}
-
-nav a:hover{
-    color: #c78c19;
-    text-decoration: underline;
-}
-
-.produtos {
-    width: 940px;
-    margin: 0 auto;
-    padding: 50px 0;
-}
-
-.produtos li {
-    display: inline-block;
-    text-align: center;
-    width: 30%;
-    vertical-align: top;
-    margin: 0 1.5%;
-    padding: 30px 20px;
-    box-sizing: border-box;
-    border: 2px solid #000000;
-    border-radius: 10px;
-}
-
-.produtos li:hover {
-    border-color: #c78c19;
-    font-size: 40px;
-}
-
-.produtos li:active {
-    border-color: #088c19;
-} 
-
-.produtos li:hover h2 {
-    font-size: 35px;
-}
-
-.produtos h2 {
-    font-size: 30px;
-    font-weight: bold;
-}
-
-.produto-descricao {
-    font-size: 18px;;
-}
-
-.produto-preco {
-    font-size: 22px;
-    font-weight: bold;
-    margin-top: 10px;
-}
-
-footer {
-    text-align: center;
-    background: url("bg.jpg");
-    padding: 40px 0;
-}
-
-.copyright {
-    color: #ffffff;
-    font-size: 13px;
-    margin: 20px 0 0;
-}
-
 main {
-    width: 940px;
-    margin: 0 auto;
+    font-family: var(--fonte-padrao);
+    padding: 20px;
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 30px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.406);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 form {
@@ -176,7 +89,7 @@ form {
 
 form label, form p {
     display: block;
-    font-size: 20px;
+    font-size: 18px;
     margin: 0 0 10px;
 }
 
@@ -190,3 +103,17 @@ form label, form p {
 .checkbox {
     margin: 20px 20px;
 }
+
+footer {
+    background: url("bg.jpg");
+}
+
+.copyright {
+    padding: 5px;
+    color: #ffffff;
+	text-align: center;
+    font-size: 13px;
+    margin: 0 0 0;
+	font-style: italic;
+}
+

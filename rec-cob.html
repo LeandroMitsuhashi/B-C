@@ -1,76 +1,79 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="shortcut icon" href="img-favicon/letrabc.ico" type="image/x-icon">
-        <link rel="stylesheet" href="reset.css">
-        <link rel="stylesheet" href="estilo/style-reccob.css">  
-        <title>RecCob-B.C</title>
-    </head>
-    <body>
-        <header>
-            <div class="caixa">
-                <h1><img src="img-logo/logo-gg350.png"></h1>
-                <nav>
-                    <ul>
-                        <li><a href="pg-home.html">Home</a></li>
-                        <li><a href="produtos.html">Produtos</a></li>
-                        <li><a href="contato.html">Contatos</a></li>
-                    </ul>
-                </nav>
-            </div> 
-        </header>
-            <div>
-                <h1 class="rec-cobranca">Recebimento de Cobrança</h1>
-                <p class="txt-abaixo">Abaixo você irá entrar com os dados nos campos, e ao final do dia irá finalizar e enviar os dados.</p>
-            </div>
-        <section>
-            <div class="caixa-dados">
-                <p>Nome/código Cliente:
-                    <input type="text" name="txtnome" id="txtnome">
-                </p>
-                <p>Valor Recebido:
-                    <input type="number" name="txtvalor" id="txtvalor">
-                </p>
-                <p>Forma de recebimento:
-                    <br>
-                    <input type="radio" name="radforma" id="din" checked>
-                    <label for="din">Dinheiro</label>
-                    <input type="radio" name="radforma" id="pix">
-                    <label for="pix">Pix</label>
-                    <input type="radio" name="radforma" id="ccred">
-                    <label for="ccred">C.Cred</label>
-                    <input type="radio" name="radforma" id="cdeb">
-                    <label for="cdeb">C.Deb</label>
-                </p>
-                <p>Anotações:
-                    <input type="text" name="txtanotacao" id="txtanotacao">
-                </p>
-                <p>
-                    <input type="button" value="Salvar" onclick="recSalvo()">
-                </p>
-            </div>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img-favicon/letrabc.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilo/style-reccob.css">  
+    <title>RecCob-B.C</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img-logo/logos250-bege.png" alt="">
+            <img src="" alt="">
+        </div>
+        
+        <ul class="menu">
+            <li><a href="#">Produtos</a></li>
+            <li><a href="#">Notícias</a></li>
+            <li><a href="#">Contatos</a></li>
+        </ul>
+    </header>
+    <main>
+        <div>
+            <h1 class="rec-cobranca">Recebimento de Cobrança</h1>
+            <p class="txt-abaixo">Abaixo você irá entrar com os dados nos campos, e ao final do dia irá finalizar e enviar os dados.</p>
+        </div>
+
+        <div class="caixa-dados">
+            <p>Nome/código Cliente:
+                <input type="text" name="txtnome" id="txtnome">
+            </p>
+            <p>Valor Recebido:
+                <input type="number" name="txtvalor" id="txtvalor">
+            </p>
+            <p>Forma de recebimento:
+                <br>
+                <input type="radio" name="radforma" id="din" checked>
+                <label for="din">Dinheiro</label>
+                <input type="radio" name="radforma" id="pix">
+                <label for="pix">Pix</label>
+                <input type="radio" name="radforma" id="ccred">
+                <label for="ccred">C.Cred</label>
+                <input type="radio" name="radforma" id="cdeb">
+                <label for="cdeb">C.Deb</label>
+            </p>
+            <p>Anotações:
+                <input type="text" name="txtanotacao" id="txtanotacao">
+            </p>
+            <p>
+                <input type="button" value="Salvar" onclick="recSalvo()">
+            </p>
+        </div>
+            
+        <div class="anot-pedido">
+            <p>Vendas / Pedidos: <br><br>
                 
-            <div class="anot-pedido">
-                <p>Vendas / Pedidos: <br><br>
-                    <p>Para fazer pedido <a href="pg-pedidos.html">clique aqui.</a></p>
-                    <!--item 1:
-                    <input type="text" name="txtpedido" id="txtpedido"> <br>
-                    item 2:
-                    <input type="text" name="txtpedido" id="txtpedido"> 
-                    <br>
-                    item 3:
-                    <input type="text" name="txtpedido" id="txtpedido">-->
-                </p>
-            </div>
-        </section>
-        <p class="voltar">Para voltar na página da área de trabalho <a href="pg-area-trab.html" rel="next">clique aqui.</a></p>
-        <footer>
-            <img src="logo250-brc-2.png">
-            <p class="copyright">&copy; Copyright Barbearia Alura - 2019</p>
-        </footer>
-        <script src="script.js"></script>
-    </body>
+                <!--item 1:
+                <input type="text" name="txtpedido" id="txtpedido"> <br>
+                item 2:
+                <input type="text" name="txtpedido" id="txtpedido"> 
+                <br>
+                item 3:
+                <input type="text" name="txtpedido" id="txtpedido">-->
+            </p>
+        </div>
+
+    </main>
+    <section>
+        <p class="voltar">Para voltar para a área de trabalho <a href="pg-area-trab.html" rel="next">clique aqui.</a></p>
+        <p class="voltar">Para anotar um pedido <a href="pg-pedidos.html">clique aqui.</a></p>
+    </section>
+    <footer>
+        <p class="copyright">&copy; Copyright Barbearia Alura - 2019</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
 </html>
