@@ -31,18 +31,24 @@ body {
 
 header {
 	background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
-    padding: 40px;
 	box-shadow:-2px 5px 15px 3px rgb(0 0 0 / 24%);
 	border-bottom: 3px solid var(--cor0);
-    
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+    padding: 2em;   
 }
 
+.container-1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    column-gap: 30px;
+    transition: 2s;
+    border-radius: 15px;
+    
+   
+}
 .logo {
-    margin-left: 100px;
+    margin-left:
 }
 
 .menu {
@@ -118,7 +124,7 @@ article > ul {
     columns: 2;
 }
 
-.container {
+.container-2 {
     display: flex;
     flex-direction: row;
     justify-content: center;
