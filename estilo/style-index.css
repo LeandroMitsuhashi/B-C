@@ -30,7 +30,8 @@ body {
 }
 
 header {
-    padding: 0.1em 0;
+    padding: 0.2em 0 2em;
+    align-items: center;
 	background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
 	box-shadow:-2px 5px 15px 3px rgb(0 0 0 / 24%);
 	border-bottom: 3px solid var(--cor0); 
@@ -38,7 +39,7 @@ header {
 
 img {
     margin: 0 0 10px 0;
-    height: 65px;
+    height: 55px;
 }
 .container1 {
     padding: 1em;
@@ -49,11 +50,11 @@ img {
 }
 
 .logo {
-    height: 50px;
+    height:75px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-items: center;
+    align-items: stretch;
     
 }
 
@@ -66,8 +67,13 @@ img {
 .menus {
     display: flex;
     padding: 20px;
+    flex-wrap: wrap;
 }
+li {
+    margin-left: 20px;
+    flex-wrap: wrap;
 
+}
 .menu a {
 	display: flex;
     margin-right: 5px;
@@ -77,6 +83,7 @@ img {
     text-decoration: none;
     padding: 10px;
     border-radius: 10px;
+    transition: 1s;
 }
 
 .menu a:hover {
