@@ -30,7 +30,7 @@ body {
 }
 
 header {
-    padding: 0.2em 0 2em;
+    padding: 0.2rem 0 2rem;
     align-items: center;
 	background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
 	box-shadow:-2px 5px 15px 3px rgb(0 0 0 / 24%);
@@ -40,56 +40,49 @@ header {
 img {
     margin: 0 0 10px 0;
     height: 55px;
+    width: 100%;
 }
+
 .container1 {
     padding: 1em;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-}
-
-.logo {
-    height:75px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: stretch;
-    
+    width: 100%;
 }
 
 .menu {
     list-style: none;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    width: 100%;
 }
 
 .menus {
-    display: flex;
     padding: 20px;
-    flex-wrap: wrap;
 }
+
 li {
     margin-left: 20px;
-    flex-wrap: wrap;
-
+    width: 100%;
 }
 .menu a {
-	display: flex;
     margin-right: 5px;
     text-transform: uppercase;
     color: var(--cor1);
-    font-size: 15px;
+    font-size: 14px;
     text-decoration: none;
     padding: 10px;
     border-radius: 10px;
     transition: 1s;
+    width: 100%;
 }
 
 .menu a:hover {
     color: #ffffff;
     text-decoration: underline;
-    font-size: 18px;
+    font-size: 16px;
     background-color: #d5c1ae24;
 }
 
@@ -112,18 +105,21 @@ main h1 {
     color: var(--cor5);
 	font-family: var(--fonte-destaque);
     text-align: center;
+    width: 100%;
 }
 
 main h2 {
     color: var(--cor5);
 	font-family: var(--fonte-destaque);
     text-align: center;
+    width: 100%;
 }
 
 main h3 {
 	color: var(--cor5);
 	font-family: var(--fonte-destaque);
 	text-align: center;
+    width: 100%;
 }
 
 p {
@@ -133,13 +129,18 @@ p {
 	text-indent: 30px;
     font-size: 1em;
     line-height: 2em;
+    width: 100%;
 }
 
-article > ul {
+article ul {
     list-style-type: '\2714\00A0\00A0';
     padding: 20px;
     list-style-position: inside;
     columns: 2;
+    width: 100%;
+}
+article ul li {
+    font-size: 14px;
 }
 
 .container-2 {
@@ -156,6 +157,7 @@ article > ul {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    width: 100%;
 }
 
 .bloco {
