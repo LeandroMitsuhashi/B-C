@@ -4,26 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="" type="image/x-icon">
+    <link rel="shortcut icon" href="img-favicon/letrabc.ico" type="image/x-icon">
     <link rel="stylesheet" href="/estilo/style-pedido.css">
     <title>Pedidos-B.C</title>
 </head>
 <body>
     <header>
         <div class="logo">
-            <img src="img-logo/logos250-bege.png" alt="">
-            <img src="" alt="">
+            <img src="img-logo/logos250-bege.png" alt="Logo Beauty Company">
         </div>
         
-        <ul class="menu">
-            <li><a href="#">Produtos</a></li>
-            <li><a href="#">Notícias</a></li>
-            <li><a href="#">Contatos</a></li>
-        </ul>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="area-de-tabalho.html">A. T.</a></li>
+                <li><a href="#">Contatos</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
         <form>
-            <label for="nomesobrenome">Nome e sobrenome</label>
+            <label for="nomesobrenome">Nome / Barbearia / Salão</label>
             <input type="text" id="nomesobrenome" class="input-padrao">
             
             <label for="email">Email</label>
@@ -32,21 +33,21 @@
             <label for="telefone">Telefone</label>
             <input type="text" id="telefone" class="input-padrao">
 
-            <label for="mensagem">Mensagem</label>
-            <textarea id="mensagem" cols="60" rows="10" class="input-padrao"></textarea>
+            <label for="pedido">Pedido</label>
+            <textarea id="pedido" cols="60" rows="10" class="input-padrao"></textarea>
 
             <div>
-                <p>Como prefere o nosso contato?</p>
+                <p>Foi entregue?</p>
 
-                <label for="radio-email"><input name="contato" type="radio" value="email" id="radio-email"> Email</label>
+                <label for="radio-sim"><input name="entrega" type="radio" value="sim" id="radio-sim"> Sim</label>
                 
-                <label for="radio-telefone"><input name="contato" type="radio" value="telefone" id="radio-telefone"> Telefone</label>
+                <label for="radio-nao"><input name="entrega" type="radio" value="telefone" id="radio-telefone"> Não</label>
                     
-                <label for="radio-whatsapp"><input name="contato" type="radio" value="whatsapp" id="radio-whatsapp"> Whatsapp</label>                
+                <label for="radio-whatsapp"><input name="entrega" type="radio" value="whatsapp" id="radio-"> Próximo dia</label>                
             </div>
 
             <div>
-                <p>Qual o horário que prefere ser atendido?</p>
+                <p>Qual o horário para fazer a entrega?</p>
                 <select>
                     <option>Manhã</option>
                     <option>Tarde</option>
