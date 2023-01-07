@@ -23,27 +23,37 @@
         </nav>
     </header>
     <main>
-        <form>
-            <label for="nomesobrenome">Nome / Barbearia / Salão</label>
-            <input type="text" id="nomesobrenome" class="input-padrao">
+        <form action="pedidos.php" autocomplete="off">
+             
+            <p>
+                <label for="inome">Nome / Barbearia / Salão</label>
+                <input type="text" id="inome" class="input-padrao">
+            </p>
             
-            <label for="email">Email</label>
-            <input type="text" id="email" class="input-padrao">
+            <p>
+                <label for="idata">Data</label>
+                <input type="date" name="data" id="idata">
+            </p>
 
-            <label for="telefone">Telefone</label>
-            <input type="text" id="telefone" class="input-padrao">
+            <p>
+                <label for="ivendedor">Vendedor</label>
+                <input type="text" id="ivendedor" class="input-padrao">
+            </p>
 
-            <label for="pedido">Pedido</label>
-            <textarea id="pedido" cols="60" rows="10" class="input-padrao"></textarea>
+            <p>
+                <label for="ipedido">Pedido</label>
+                <textarea id="ipedido" cols="60" rows="10" class="input-padrao"></textarea>
+            </p>
 
             <div>
                 <p>Foi entregue?</p>
 
-                <label for="radio-sim"><input name="entrega" type="radio" value="sim" id="radio-sim"> Sim</label>
+                <label for="radio-sim"><input name="sim" type="radio" value="sim" id="sim"> Sim</label>
                 
-                <label for="radio-nao"><input name="entrega" type="radio" value="telefone" id="radio-telefone"> Não</label>
+                <label for="radio-nao"><input name="nao" type="radio" value="nao" id="nao"> Não</label>
                     
-                <label for="radio-whatsapp"><input name="entrega" type="radio" value="whatsapp" id="radio-"> Próximo dia</label>                
+                <label for="idata-entrega"><input name="data-entrega" type="radio" value="data-entrega" id="idata-entrega"> Próximo dia</label> <label for="idata"></label>
+                <input type="date" name="data" id="idata">
             </div>
 
             <div>
@@ -57,7 +67,7 @@
 
             <label class="checkbox"><input type="checkbox"> Gostaria de receber nossas novidades por email?</label>
             
-            <input type="submit" value="Enviar Fomulário">
+            <input type="submit" value="Enviar Pedido">
         </form>
     </main>
     <footer>
