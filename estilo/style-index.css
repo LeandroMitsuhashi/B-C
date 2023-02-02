@@ -56,9 +56,8 @@ span#burger:hover {
     color: black;
 }
 
-.menu {
+nav {
    display: none;
-   
 }
 
 nav > ul {
