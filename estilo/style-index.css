@@ -31,52 +31,66 @@ body {
 
 header {
 	background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
-    padding: 40px;
+    padding: 2rem 1rem 1rem 1rem;
 	box-shadow:-2px 5px 15px 3px rgb(0 0 0 / 24%);
 	border-bottom: 3px solid var(--cor0);
-    
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+    text-align: center;
 }
 
 .logo {
-    margin-left: 100px;
+    text-align: center;
+    margin: 5px;
+}
+
+span#burger {
+    color: var(--cor1);
+    display: block;
+    text-align: center;
+    padding: 0.1rem;
+    cursor: pointer;
+}
+
+span#burger:hover {
+    border-radius: 2px;
+    background-color: white;
+    color: black;
 }
 
 .menu {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
+   display: none;
+   
 }
 
-.menu li a {
+nav > ul {
+    list-style-type: none;
+}
+
+nav > ul > li > a {
 	display: block;
-    margin-right: 10px;
-    text-transform: uppercase;
     color: var(--cor1);
-    font-size: 16px;
-    text-decoration: none;
-    padding: 10px 15px;
+    padding: 5px 10px;
     border-radius: 10px;
+    text-align: center;
+    box-sizing: border-box;
 }
 
-.menu a:hover {
+nav a:hover {
     color: #ffffff;
     transition: 0.3s;
     font-size: 17px;
     background-color: #d5c1ae24;
+    border: 2px solid gray;
+    box-sizing: border-box;
 }
 
 span#acesso {
     position: absolute;
-    top: 5px;
-    right: 5px;
+    top: 0.4rem;
+    right: 3.5rem;
     padding: 0 60px;
 
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     color: #ffffff;
     width: 10px;
@@ -84,7 +98,7 @@ span#acesso {
 
 span#acesso > a {
     color: #ffffff;
-    font-size: 10px;
+    font-size: 9px;
     font-family: var(--fonte-padrao);
     text-align: center;
 }
@@ -92,7 +106,7 @@ span#acesso > a {
 span#acesso > a:hover {
     color: #ffffff;
     transition: 0.3s;
-    font-size: 11px;
+    font-size: 10px;
     font-weight: bold;
     background-color: #d5c1ae24;
     border-radius: 5px;
@@ -202,4 +216,32 @@ footer {
     font-size: 13px;
     margin: 0 0 0;
 	font-style: italic;
+}
+
+
+/* Typical Device Break Points
+
+Pequenas telas: até 600px
+Celular: de 600px até 768px
+Tablet: de 768px até 992px
+Desktop: de 992px até 1200px
+TV: acima de 1200px
+*/
+
+@media screen and (min-width: 700px) {
+
+
+    span#burger {
+        display: none;
+    }
+
+    nav {
+        display: block;
+    }
+
+    nav > ul > li {
+        display: inline-block;
+    } 
+
+    
 }
